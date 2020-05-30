@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:background="#F4F2FB"
+    android:id="@+id/main_rl"
+    tools:context=".ui.MainActivity">
+
+
+
+    <androidx.cardview.widget.CardView
+
+        android:id="@+id/main_cv_header"
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="14dp"
+        app:cardElevation="24dp"
+        app:cardBackgroundColor="@color/semiTransparentColor"
+        app:cardCornerRadius="14dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile_main_image"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:src="@drawable/ic_camera"
+                    app:civ_border_width="2dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_gravity="center"
+                    app:civ_border_color="#FFFFFF"/>
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="14dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_weight="0"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:textSize="12sp"
+                            android:fontFamily="@font/poppins_regular"
+                            android:gravity="bottom"
+                            android:text="Nama"
+                            >
+
+                        </TextView>
+
+                        <EditText
+                            android:id="@+id/tv_nama"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="24dp"
+                            android:textSize="12sp"
+                            android:gravity="end|bottom"
+                            android:fontFamily="@font/poppins_regular"
+                            android:textStyle="bold"
+                            android:background="@null">
+                        </EditText>
+
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.1dp"
+                        android:background="#7ECBCDCD">
+
+                    </View>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="5dp">
+
+                        <TextView
+                            android:gravity="bottom"
+                            android:layout_weight="0"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:textSize="12sp"
+                            android:fontFamily="@font/poppins_regular"
+                            android:text="Alamat"
+                            >
+
+                        </TextView>
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/tv_alamat"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="24dp"
+                            android:textSize="12sp"
+                            android:gravity="end|bottom"
+                            android:fontFamily="@font/poppins_regular"
+                            android:textStyle="bold"
+                            android:background="@null">
+                        </com.google.android.material.textfield.TextInputEditText>
+
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.1dp"
+                        android:background="#7ECBCDCD">
+
+                    </View>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="5dp">
+
+                        <TextView
+                            android:gravity="bottom"
+                            android:layout_weight="0"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:textSize="12sp"
+                            android:fontFamily="@font/poppins_regular"
+                            android:text="Tempat Lahir"
+                            >
+
+                        </TextView>
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/tv_tmp_lahir"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="24dp"
+                            android:textSize="12sp"
+                            android:gravity="end|bottom"
+                            android:fontFamily="@font/poppins_regular"
+                            android:textStyle="bold"
+                            android:background="@null">
+                        </com.google.android.material.textfield.TextInputEditText>
+
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.1dp"
+                        android:background="#7ECBCDCD">
+
+                    </View>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="5dp">
+
+                        <TextView
+                            android:gravity="bottom"
+                            android:layout_weight="0"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:textSize="12sp"
+                            android:fontFamily="@font/poppins_regular"
+                            android:text="Tanggal Lahir"
+                            >
+
+                        </TextView>
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/tv_tgl_lahir"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="24dp"
+                            android:textSize="12sp"
+                            android:gravity="end|bottom"
+                            android:fontFamily="@font/poppins_regular"
+                            android:textStyle="bold"
+                            android:focusable="false"
+                            android:clickable="true"
+                            android:background="@null">
+                        </com.google.android.material.textfield.TextInputEditText>
+
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.1dp"
+                        android:background="#7ECBCDCD">
+
+                    </View>
+
+                    <com.google.android.material.switchmaterial.SwitchMaterial
+                        android:id="@+id/swicth_main"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:showText="true"
+                        android:textOn=" L "
+                        android:textOff=" P "
+                        android:text="Jeni Kelamin"
+                        android:textSize="12sp"
+                        android:fontFamily="@font/poppins_regular"
+                        tools:ignore="HardcodedText">
+
+                    </com.google.android.material.switchmaterial.SwitchMaterial>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ln_btn"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal"
+                android:gravity="end|center"
+                tools:ignore="UselessParent"
+                android:background="@drawable/bg_linear">
+
+                <Button
+                    android:id="@+id/btn_main_delete"
+                    android:layout_width="27dp"
+                    android:layout_height="27dp"
+                    android:stateListAnimator="@null"
+                    android:background="@drawable/ic_action_delete"
+                    android:layout_marginEnd="10dp">
+
+                </Button>
+
+                <Button
+                    android:id="@+id/btn_main_cancel"
+                    android:layout_width="27dp"
+                    android:layout_height="27dp"
+                    android:stateListAnimator="@null"
+                    android:background="@drawable/ic_action_cancel"
+                    android:layout_marginEnd="10dp">
+
+                </Button>
+
+                <Button
+                    android:id="@+id/btn_main_save"
+                    android:layout_width="27dp"
+                    android:layout_height="27dp"
+                    android:layout_marginEnd="14dp"
+                    android:stateListAnimator="@null"
+                    android:background="@drawable/ic_action_check">
+                </Button>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <com.github.ybq.android.spinkit.SpinKitView
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:id="@+id/main_spin"
+        style="@style/SpinKitView.Circle"
+        android:layout_centerInParent="true"
+        app:SpinKit_Color="@color/colorAccent">
+
+    </com.github.ybq.android.spinkit.SpinKitView>
+
+    <TextView
+        android:id="@+id/tv_of_siswa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_regular"
+        android:layout_below="@+id/main_cv_header"
+        android:textStyle="bold"
+        android:layout_margin="10dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginLeft="14dp"
+        android:text="@string/list_siswa">
+
+    </TextView>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/main_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tv_of_siswa">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+
+
+
+</RelativeLayout>
